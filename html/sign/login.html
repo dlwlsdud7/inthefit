@@ -4,9 +4,9 @@
     <title>인더핏 - 로그인</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/global.css" />
+    <link rel="stylesheet" href="../../css/login.css" />
     <link
       href="https://fonts.googleapis.com/earlyaccess/notosanskr.css"
       rel="stylesheet"
@@ -16,7 +16,7 @@
     <div class="login-wrapper">
       <div class="login-container">
         <h1 class="logo">
-          <a href="../index.html">인더핏</a>
+          <a href="../../index.html">인더핏</a>
         </h1>
 
         <p>
@@ -28,7 +28,13 @@
           <form>
             <input type="text" name="email" placeholder="아이디" />
             <input type="password" name="password" placeholder="비밀번호" />
-            <button type="submit" class="submit-btn">로그인</button>
+            <button
+              type="submit"
+              class="submit-btn"
+              onclick="location.href = '../index.html' "
+            >
+              로그인
+            </button>
           </form>
 
           <div class="links">

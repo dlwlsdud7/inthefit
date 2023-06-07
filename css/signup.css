@@ -1,74 +1,95 @@
-/* Google web font CDN*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
-
-*{
-    box-sizing: border-box; /*전체에 박스사이징*/
-    outline: none; /*focus 했을때 테두리 나오게 */
-    
-}
 .login-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80vh;
-}
-
-h1{
-  text-align: center;
-  color: green;
-  font-size: 50px;
-  }
-
-body{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size:14px;
-    background-color: #f5f6f7;
-    line-height: 1.5em;
-    color : #222;
-    margin: 0;
-}
-
-/*member sign in*/
-.member{
-    width: 400px;
-    /* border: 1px solid #000; */
-    margin: auto; /*중앙 정렬*/
-    padding: 0 20px;
-    margin-bottom: 20px;
-}
-
-
-.member b{
-    /* border: 1px solid #000; */
-    display: block; /*수직 정렬하기 */
-    margin-bottom: 5px;
-}
-
-/*input 중 radio 는 width 가 100%면 안되니까 */
-.member input:not(input[type=radio]),.member select{
-    border: 1px solid #dadada;
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin-bottom: 5px;
-}
-
-.member input[type=button],
-.member input[type=submit]{
-  font-size: 15px;
-  background-color: green;
-  border-style: none;
-  padding: 10px;
-  margin: auto auto 20px auto;
-  border-radius: 4px;
-  width: 260px;
-  color: white;
-  cursor: pointer; 
-}
-
-@media (max-width:768px) {
-    .member{
-        width: 100%;
-    }
-}
+    height: 100vh;
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 48px;
+    margin-top: 150px;
+    margin-bottom: 12px;
+    color: green;
+  }
+  
+  .login-link {
+    color: gray;
+  }
+  
+  .login-link:hover {
+    color: green;
+    transition: color 0.5s;
+  }
+  
+  .login-form {
+    padding: 20px;
+    background-color: gainsboro;
+    width: 300px;
+    display: block;
+    margin: 36px auto auto auto;
+    border-radius: 5px;
+  }
+  
+  .login-form input {
+    font-size: 14px;
+    border-style: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 4px;
+    width: 260px;
+    color: #9b9b9b;
+  }
+  
+  .submit-btn {
+    font-size: 14px;
+    background-color: green;
+    border-style: none;
+    padding: 10px;
+    margin: auto auto 20px auto;
+    border-radius: 4px;
+    width: 120px;
+    cursor: pointer;
+    color: white;
+    float: left;
+    margin-left: 5px;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  .submit-btn:hover {
+    opacity: 0.7;
+  }
+  
+  .links {
+    text-align: center;
+  }
+  
+  .links a {
+    font-size: 12px;
+    color: white;
+  }
+  
+  .links a:hover {
+    color: green;
+    transition: color 0.5s;
+  }
+  select {
+    padding: 10px;
+    background-color: white;
+    width: 260px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
